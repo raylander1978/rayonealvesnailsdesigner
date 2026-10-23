@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rayone Alves | Instrutora e Nail Designer</title>
-    <meta name="description" content="Rayone Alves - Instrutora e Nail Designer com mais de 20 anos de experiência em Timóteo/MG. Manicure, Pedicure, Cabeleireira, Unhas de Gel e Sobrancelhas.">
+    <title data-i18n="meta.title">Rayone Alves | Instrutora e Nail Designer</title>
+    <meta name="description" data-i18n-content="meta.description" content="Rayone Alves - Instrutora e Nail Designer com mais de 20 anos de experiência em Timóteo/MG. Manicure, Pedicure, Cabeleireira, Unhas de Gel e Sobrancelhas.">
     <link rel="icon" type="image/png" href="assets/img/logo-cabecalho.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,19 +20,23 @@
             <a href="#home" class="nav-logo">
                 <img src="assets/img/logo-cabecalho.png" alt="Rayone Alves - Instrutora e Nail Designer">
             </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-i18n="nav.home">Início</a></li>
+                <li><a href="#sobre" class="nav-link" data-i18n="nav.about">Sobre</a></li>
+                <li><a href="#servicos" class="nav-link" data-i18n="nav.services">Serviços</a></li>
+                <li><a href="#galeria" class="nav-link" data-i18n="nav.gallery">Galeria</a></li>
+                <li><a href="#depoimentos" class="nav-link" data-i18n="nav.testimonials">Depoimentos</a></li>
+                <li><a href="#contato" class="nav-link" data-i18n="nav.contact">Contato</a></li>
+            </ul>
+            <div class="language-switcher" role="group" aria-label="Selecionar idioma" data-i18n-aria-label="language.group">
+                <button class="language-button active" type="button" data-language="pt-BR" aria-label="Português do Brasil" aria-pressed="true" title="Português do Brasil" data-i18n-aria-label="language.pt" data-i18n-title="language.pt"><span aria-hidden="true">🇧🇷</span></button>
+                <button class="language-button" type="button" data-language="en" aria-label="English" aria-pressed="false" title="English" data-i18n-aria-label="language.en" data-i18n-title="language.en"><span aria-hidden="true">🇺🇸</span></button>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" data-i18n-aria-label="nav.openMenu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active">Início</a></li>
-                <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li><a href="#servicos" class="nav-link">Serviços</a></li>
-                <li><a href="#galeria" class="nav-link">Galeria</a></li>
-                <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
-                <li><a href="#contato" class="nav-link">Contato</a></li>
-            </ul>
         </div>
     </nav>
 
@@ -40,23 +44,20 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text">
-                <p class="hero-greeting">Seja bem-vinda</p>
+                <p class="hero-greeting" data-i18n="hero.greeting">Seja bem-vinda</p>
                 <h1 class="hero-title">Rayone Alves</h1>
-                <p class="hero-subtitle">Instrutora e Nail Designer</p>
-                <p class="hero-description">
-                    Mais de <strong>20 anos</strong> de experiência em beleza, cuidado e autoestima
-                    em Timóteo/MG.
-                </p>
+                <p class="hero-subtitle" data-i18n="brand.role">Instrutora e Nail Designer</p>
+                <p class="hero-description" data-i18n-html="hero.description">Mais de <strong>20 anos</strong> de experiência em beleza, cuidado e autoestima em Timóteo/MG.</p>
                 <div class="hero-buttons">
-                    <a href="https://wa.me/5531971643629?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fab fa-whatsapp"></i> Agendar Horário
+                    <a href="https://wa.me/5531971643629?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="btn btn-primary" data-wa-message="hero.booking" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> <span data-i18n="hero.book">Agendar Horário</span>
                     </a>
-                    <a href="#servicos" class="btn btn-secondary">Nossos Serviços</a>
+                    <a href="#servicos" class="btn btn-secondary" data-i18n="hero.services">Nossos Serviços</a>
                 </div>
             </div>
         </div>
         <div class="hero-scroll">
-            <a href="#sobre"><i class="fas fa-chevron-down"></i></a>
+            <a href="#sobre" aria-label="Conheça mais" data-i18n-aria-label="hero.scroll"><i class="fas fa-chevron-down"></i></a>
         </div>
     </section>
 
@@ -64,26 +65,26 @@
     <section class="section sobre" id="sobre">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">♥ Conheça nossa história ♥</span>
-                <h2 class="section-title">Sobre Mim</h2>
+                <span class="section-tag" data-i18n="about.tag">♥ Conheça nossa história ♥</span>
+                <h2 class="section-title" data-i18n="about.title">Sobre Mim</h2>
                 <div class="title-divider"></div>
             </div>
             <div class="sobre-content">
                 <div class="sobre-image">
                     <div class="sobre-image-wrapper">
-                        <img src="assets/img/rayone-sobre.jpg" alt="Rayone Alves">
+                        <img src="assets/img/rayone-sobre.jpg" alt="Rayone Alves" data-i18n-alt="brand.photoAlt">
                         <div class="sobre-image-decoration"></div>
                     </div>
                 </div>
                 <div class="sobre-text">
                     <h3>Rayone Alves Moreira</h3>
-                    <p class="sobre-role">Instrutora e Nail Designer</p>
-                    <p>
+                    <p class="sobre-role" data-i18n="brand.role">Instrutora e Nail Designer</p>
+                    <p data-i18n-html="about.paragraph1">
                         Há mais de <strong>20 anos</strong> dedico minha vida à arte da beleza. 
                         Cada cliente que passa pelo meu espaço sai não apenas mais bonita, 
                         mas com a autoestima renovada e um sorriso no rosto.
                     </p>
-                    <p>
+                    <p data-i18n-html="about.paragraph2">
                         Meu compromisso é oferecer serviços de qualidade, utilizando os melhores 
                         produtos do mercado e técnicas atualizadas. Sou instrutora certificada 
                         e Nail Designer, sempre buscando aperfeiçoamento para trazer o melhor 
@@ -92,19 +93,19 @@
                     <div class="sobre-stats">
                         <div class="stat-item">
                             <span class="stat-number" data-target="20">0</span><span class="stat-plus">+</span>
-                            <span class="stat-label">Anos de Experiência</span>
+                            <span class="stat-label" data-i18n="about.statYears">Anos de Experiência</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number" data-target="5000">0</span><span class="stat-plus">+</span>
-                            <span class="stat-label">Clientes Atendidas</span>
+                            <span class="stat-label" data-i18n="about.statClients">Clientes Atendidas</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number" data-target="4">0</span>
-                            <span class="stat-label">Serviços Especializados</span>
+                            <span class="stat-label" data-i18n="about.statServices">Serviços Especializados</span>
                         </div>
                     </div>
-                    <a href="https://wa.me/5531971643629?text=Olá%20Rayone!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fab fa-whatsapp"></i> Fale Comigo
+                    <a href="https://wa.me/5531971643629?text=Ol%C3%A1%20Rayone!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os." class="btn btn-primary" data-wa-message="about.contact" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> <span data-i18n="about.contactButton">Fale Comigo</span>
                     </a>
                 </div>
             </div>
@@ -115,40 +116,40 @@
     <section class="section servicos" id="servicos">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">♥ O que oferecemos ♥</span>
-                <h2 class="section-title">Nossos Serviços</h2>
+                <span class="section-tag" data-i18n="services.tag">♥ O que oferecemos ♥</span>
+                <h2 class="section-title" data-i18n="services.title">Nossos Serviços</h2>
                 <div class="title-divider"></div>
-                <p class="section-desc">Cada serviço é realizado com carinho, dedicação e os melhores produtos do mercado.</p>
+                <p class="section-desc" data-i18n="services.description">Cada serviço é realizado com carinho, dedicação e os melhores produtos do mercado.</p>
             </div>
             <div class="servicos-grid">
                 <div class="servico-card" data-aos="fade-up">
                     <div class="servico-icon">
                         <i class="fas fa-hand-sparkles"></i>
                     </div>
-                    <h3>Manicure e Pedicure</h3>
-                    <p>Unhas impecáveis com esmaltação perfeita, cutilagem delicada e cuidado especial para suas mãos e pés ficarem lindos.</p>
-                    <a href="https://wa.me/5531971643629?text=Olá!%20Gostaria%20de%20agendar%20Manicure%20e%20Pedicure." class="servico-link" target="_blank" rel="noopener">
-                        Agendar <i class="fas fa-arrow-right"></i>
+                    <h3 data-i18n="services.manicure">Manicure e Pedicure</h3>
+                    <p data-i18n="services.manicureDescription">Unhas impecáveis com esmaltação perfeita, cutilagem delicada e cuidado especial para suas mãos e pés ficarem lindos.</p>
+                    <a href="https://wa.me/5531971643629?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Manicure%20e%20Pedicure." class="servico-link" data-wa-message="services.manicure" target="_blank" rel="noopener">
+                        <span data-i18n="services.book">Agendar</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 <div class="servico-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="servico-icon">
                         <i class="fas fa-cut"></i>
                     </div>
-                    <h3>Cabeleireira</h3>
-                    <p>Cortes modernos, escovas, tratamentos capilares e penteados que valorizam sua beleza e personalidade única.</p>
-                    <a href="https://wa.me/5531971643629?text=Olá!%20Gostaria%20de%20agendar%20um%20serviço%20de%20Cabelo." class="servico-link" target="_blank" rel="noopener">
-                        Agendar <i class="fas fa-arrow-right"></i>
+                    <h3 data-i18n="services.hair">Cabeleireira</h3>
+                    <p data-i18n="services.hairDescription">Cortes modernos, escovas, tratamentos capilares e penteados que valorizam sua beleza e personalidade única.</p>
+                    <a href="https://wa.me/5531971643629?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20servi%C3%A7o%20de%20Cabelo." class="servico-link" data-wa-message="services.hair" target="_blank" rel="noopener">
+                        <span data-i18n="services.book">Agendar</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 <div class="servico-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="servico-icon">
                         <i class="fas fa-gem"></i>
                     </div>
-                    <h3>Unhas de Gel</h3>
-                    <p>Alongamento e aplicação de unhas de gel com acabamento impecável, durabilidade e designs exclusivos.</p>
-                    <a href="https://wa.me/5531971643629?text=Olá!%20Gostaria%20de%20agendar%20Unhas%20de%20Gel." class="servico-link" target="_blank" rel="noopener">
-                        Agendar <i class="fas fa-arrow-right"></i>
+                    <h3 data-i18n="services.gel">Unhas de Gel</h3>
+                    <p data-i18n="services.gelDescription">Alongamento e aplicação de unhas de gel com acabamento impecável, durabilidade e designs exclusivos.</p>
+                    <a href="https://wa.me/5531971643629?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Unhas%20de%20Gel." class="servico-link" data-wa-message="services.gel" target="_blank" rel="noopener">
+                        <span data-i18n="services.book">Agendar</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 <div class="servico-card" data-aos="fade-up" data-aos-delay="300">
@@ -158,10 +159,10 @@
                             <path d="M13 27l8-10m2 8 8-11m2 8 7-10m2 9 6-7" fill="none" stroke="var(--pink-lightest)" stroke-linecap="round" stroke-width="2"></path>
                         </svg>
                     </div>
-                    <h3>Sobrancelhas</h3>
-                    <p>Design de sobrancelhas personalizado que harmoniza com o formato do seu rosto, realçando seu olhar.</p>
-                    <a href="https://wa.me/5531971643629?text=Olá!%20Gostaria%20de%20agendar%20Design%20de%20Sobrancelhas." class="servico-link" target="_blank" rel="noopener">
-                        Agendar <i class="fas fa-arrow-right"></i>
+                    <h3 data-i18n="services.brows">Sobrancelhas</h3>
+                    <p data-i18n="services.browsDescription">Design de sobrancelhas personalizado que harmoniza com o formato do seu rosto, realçando seu olhar.</p>
+                    <a href="https://wa.me/5531971643629?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Design%20de%20Sobrancelhas." class="servico-link" data-wa-message="services.brows" target="_blank" rel="noopener">
+                        <span data-i18n="services.book">Agendar</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
@@ -172,92 +173,92 @@
     <section class="section galeria" id="galeria">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">♥ Nossos trabalhos ♥</span>
-                <h2 class="section-title">Galeria de Fotos</h2>
+                <span class="section-tag" data-i18n="gallery.tag">♥ Nossos trabalhos ♥</span>
+                <h2 class="section-title" data-i18n="gallery.title">Galeria de Fotos</h2>
                 <div class="title-divider"></div>
-                <p class="section-desc">Confira alguns dos nossos trabalhos realizados com muito carinho.</p>
+                <p class="section-desc" data-i18n="gallery.description">Confira alguns dos nossos trabalhos realizados com muito carinho.</p>
             </div>
             <div class="carousel-wrapper gallery-carousel-wrapper">
-                <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Anterior">
+                <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Anterior" data-i18n-aria-label="gallery.previous">
                     <i class="fas fa-chevron-left"></i>
                 </button>
                 <div class="carousel-track-container">
                     <div class="carousel-track" id="carouselTrack">
                         <div class="carousel-slide">
                             <div class="gallery-item gallery-instagram-item">
-                                <img src="assets/img/galeria-instagram-1.jpg" alt="Manutenção de banho de gel feita pela Rayone">
+                                <img src="assets/img/galeria-instagram-1.jpg" alt="Manutenção de banho de gel feita pela Rayone" data-i18n-alt="gallery.alt1">
                                 <a class="gallery-instagram-link" href="https://www.instagram.com/rayonealvesunhas/" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i> Ver perfil no Instagram
+                                    <i class="fab fa-instagram" aria-hidden="true"></i> <span data-i18n="gallery.viewProfile">Ver perfil no Instagram</span>
                                 </a>
                             </div>
                         </div>
                         <div class="carousel-slide">
                             <div class="gallery-item gallery-instagram-item">
-                                <img src="assets/img/galeria-instagram-2.jpg" alt="Transformação de cabelo feita pela Rayone">
+                                <img src="assets/img/galeria-instagram-2.jpg" alt="Transformação de cabelo feita pela Rayone" data-i18n-alt="gallery.alt2">
                                 <a class="gallery-instagram-link" href="https://www.instagram.com/rayonealvesunhas/" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i> Ver perfil no Instagram
+                                    <i class="fab fa-instagram" aria-hidden="true"></i> <span data-i18n="gallery.viewProfile">Ver perfil no Instagram</span>
                                 </a>
                             </div>
                         </div>
                         <div class="carousel-slide">
                             <div class="gallery-item gallery-instagram-item">
-                                <img src="assets/img/galeria-instagram-3.jpg" alt="Trabalho de beleza realizado pela Rayone">
+                                <img src="assets/img/galeria-instagram-3.jpg" alt="Trabalho de beleza realizado pela Rayone" data-i18n-alt="gallery.alt3">
                                 <a class="gallery-instagram-link" href="https://www.instagram.com/rayonealvesunhas/" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i> Ver perfil no Instagram
+                                    <i class="fab fa-instagram" aria-hidden="true"></i> <span data-i18n="gallery.viewProfile">Ver perfil no Instagram</span>
                                 </a>
                             </div>
                         </div>
                         <div class="carousel-slide">
                             <div class="gallery-item gallery-instagram-item">
-                                <img src="assets/img/galeria-instagram-4.jpg" alt="Resultado de design de sobrancelhas publicado pela Rayone">
+                                <img src="assets/img/galeria-instagram-4.jpg" alt="Resultado de design de sobrancelhas publicado pela Rayone" data-i18n-alt="gallery.alt4">
                                 <a class="gallery-instagram-link" href="https://www.instagram.com/rayonealvesunhas/" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i> Ver perfil no Instagram
+                                    <i class="fab fa-instagram" aria-hidden="true"></i> <span data-i18n="gallery.viewProfile">Ver perfil no Instagram</span>
                                 </a>
                             </div>
                         </div>
                         <div class="carousel-slide">
                             <div class="gallery-item gallery-instagram-item">
-                                <img src="assets/img/galeria-instagram-5.jpg" alt="Manutenção com esmaltação em gel feita pela Rayone">
+                                <img src="assets/img/galeria-instagram-5.jpg" alt="Manutenção com esmaltação em gel feita pela Rayone" data-i18n-alt="gallery.alt5">
                                 <a class="gallery-instagram-link" href="https://www.instagram.com/rayonealvesunhas/" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i> Ver perfil no Instagram
+                                    <i class="fab fa-instagram" aria-hidden="true"></i> <span data-i18n="gallery.viewProfile">Ver perfil no Instagram</span>
                                 </a>
                             </div>
                         </div>
                         <div class="carousel-slide">
                             <div class="gallery-item gallery-instagram-item">
-                                <img src="assets/img/galeria-instagram-6.jpg" alt="Unhas vermelhas feitas pela Rayone">
+                                <img src="assets/img/galeria-instagram-6.jpg" alt="Unhas vermelhas feitas pela Rayone" data-i18n-alt="gallery.alt6">
                                 <a class="gallery-instagram-link" href="https://www.instagram.com/rayonealvesunhas/" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i> Ver perfil no Instagram
+                                    <i class="fab fa-instagram" aria-hidden="true"></i> <span data-i18n="gallery.viewProfile">Ver perfil no Instagram</span>
                                 </a>
                             </div>
                         </div>
                         <div class="carousel-slide">
                             <div class="gallery-item gallery-instagram-item">
-                                <img src="assets/img/galeria-instagram-7.jpg" alt="Rayone Alves, instrutora e nail designer">
+                                <img src="assets/img/galeria-instagram-7.jpg" alt="Rayone Alves, instrutora e nail designer" data-i18n-alt="gallery.alt7">
                                 <a class="gallery-instagram-link" href="https://www.instagram.com/rayonealvesunhas/" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i> Ver perfil no Instagram
+                                    <i class="fab fa-instagram" aria-hidden="true"></i> <span data-i18n="gallery.viewProfile">Ver perfil no Instagram</span>
                                 </a>
                             </div>
                         </div>
                         <div class="carousel-slide">
                             <div class="gallery-item gallery-instagram-item">
-                                <img src="assets/img/galeria-instagram-8.jpg" alt="Rayone mostrando um trabalho de nail art">
+                                <img src="assets/img/galeria-instagram-8.jpg" alt="Rayone mostrando um trabalho de nail art" data-i18n-alt="gallery.alt8">
                                 <a class="gallery-instagram-link" href="https://www.instagram.com/rayonealvesunhas/" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i> Ver perfil no Instagram
+                                    <i class="fab fa-instagram" aria-hidden="true"></i> <span data-i18n="gallery.viewProfile">Ver perfil no Instagram</span>
                                 </a>
                             </div>
                         </div>
                         <div class="carousel-slide">
                             <div class="gallery-item gallery-instagram-item">
-                                <img src="assets/img/galeria-instagram-9.jpg" alt="Rayone apresentando materiais de nail design">
+                                <img src="assets/img/galeria-instagram-9.jpg" alt="Rayone apresentando materiais de nail design" data-i18n-alt="gallery.alt9">
                                 <a class="gallery-instagram-link" href="https://www.instagram.com/rayonealvesunhas/" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i> Ver perfil no Instagram
+                                    <i class="fab fa-instagram" aria-hidden="true"></i> <span data-i18n="gallery.viewProfile">Ver perfil no Instagram</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Próximo">
+                <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Próximo" data-i18n-aria-label="gallery.next">
                     <i class="fas fa-chevron-right"></i>
                 </button>
             </div>
@@ -269,13 +270,13 @@
     <section class="section depoimentos" id="depoimentos">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">♥ O que dizem sobre nós ♥</span>
-                <h2 class="section-title">Depoimentos</h2>
+                <span class="section-tag" data-i18n="testimonials.tag">♥ O que dizem sobre nós ♥</span>
+                <h2 class="section-title" data-i18n="nav.testimonials">Depoimentos</h2>
                 <div class="title-divider"></div>
-                <p class="section-desc">Veja o que nossas clientes falam sobre a experiência conosco.</p>
+                <p class="section-desc" data-i18n="testimonials.description">Veja o que nossas clientes falam sobre a experiência conosco.</p>
             </div>
             <div class="depoimentos-carousel">
-                <button class="carousel-btn depo-prev" id="depoPrev" aria-label="Depoimento anterior">
+                <button class="carousel-btn depo-prev" id="depoPrev" aria-label="Depoimento anterior" data-i18n-aria-label="testimonials.previous">
                     <i class="fas fa-chevron-left"></i>
                 </button>
                 <div class="depoimentos-track-container">
@@ -289,14 +290,14 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <p class="depo-text">"A Rayone é uma profissional incrível! Minhas unhas nunca ficaram tão lindas. Ela tem um cuidado e uma atenção aos detalhes que é impressionante. Recomendo de olhos fechados!"</p>
+                                <p class="depo-text" data-i18n="testimonials.quote1">"A Rayone é uma profissional incrível! Minhas unhas nunca ficaram tão lindas. Ela tem um cuidado e uma atenção aos detalhes que é impressionante. Recomendo de olhos fechados!"</p>
                                 <div class="depo-author">
                                     <div class="depo-avatar">
                                         <i class="fas fa-user"></i>
                                     </div>
                                     <div class="depo-info">
                                         <h4>Maria Silva</h4>
-                                        <span>Cliente há 5 anos</span>
+                                        <span data-i18n="testimonials.client5">Cliente há 5 anos</span>
                                     </div>
                                 </div>
                             </div>
@@ -310,14 +311,14 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <p class="depo-text">"Melhor nail designer da região! As unhas de gel ficam perfeitas e duram muito tempo. O ambiente é acolhedor e a Rayone é super atenciosa. Amo demais!"</p>
+                                <p class="depo-text" data-i18n="testimonials.quote2">"Melhor nail designer da região! As unhas de gel ficam perfeitas e duram muito tempo. O ambiente é acolhedor e a Rayone é super atenciosa. Amo demais!"</p>
                                 <div class="depo-author">
                                     <div class="depo-avatar">
                                         <i class="fas fa-user"></i>
                                     </div>
                                     <div class="depo-info">
                                         <h4>Ana Oliveira</h4>
-                                        <span>Cliente há 3 anos</span>
+                                        <span data-i18n="testimonials.client3">Cliente há 3 anos</span>
                                     </div>
                                 </div>
                             </div>
@@ -331,14 +332,14 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <p class="depo-text">"Fiz o design de sobrancelhas com a Rayone e fiquei encantada com o resultado! Ela entende perfeitamente o que combina com cada rosto. Profissional de excelência!"</p>
+                                <p class="depo-text" data-i18n="testimonials.quote3">"Fiz o design de sobrancelhas com a Rayone e fiquei encantada com o resultado! Ela entende perfeitamente o que combina com cada rosto. Profissional de excelência!"</p>
                                 <div class="depo-author">
                                     <div class="depo-avatar">
                                         <i class="fas fa-user"></i>
                                     </div>
                                     <div class="depo-info">
                                         <h4>Juliana Santos</h4>
-                                        <span>Cliente há 2 anos</span>
+                                        <span data-i18n="testimonials.client2">Cliente há 2 anos</span>
                                     </div>
                                 </div>
                             </div>
@@ -352,14 +353,14 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <p class="depo-text">"Já passei por muitas manicures, mas nenhuma se compara à Rayone. Além de talentosa, é uma pessoa maravilhosa. O atendimento é sempre perfeito. Super indico!"</p>
+                                <p class="depo-text" data-i18n="testimonials.quote4">"Já passei por muitas manicures, mas nenhuma se compara à Rayone. Além de talentosa, é uma pessoa maravilhosa. O atendimento é sempre perfeito. Super indico!"</p>
                                 <div class="depo-author">
                                     <div class="depo-avatar">
                                         <i class="fas fa-user"></i>
                                     </div>
                                     <div class="depo-info">
                                         <h4>Fernanda Costa</h4>
-                                        <span>Cliente há 8 anos</span>
+                                        <span data-i18n="testimonials.client8">Cliente há 8 anos</span>
                                     </div>
                                 </div>
                             </div>
@@ -373,21 +374,21 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <p class="depo-text">"A Rayone cortou meu cabelo e ficou maravilhoso! Ela tem uma sensibilidade enorme para entender o que a gente quer. Saí de lá me sentindo a mulher mais linda do mundo!"</p>
+                                <p class="depo-text" data-i18n="testimonials.quote5">"A Rayone cortou meu cabelo e ficou maravilhoso! Ela tem uma sensibilidade enorme para entender o que a gente quer. Saí de lá me sentindo a mulher mais linda do mundo!"</p>
                                 <div class="depo-author">
                                     <div class="depo-avatar">
                                         <i class="fas fa-user"></i>
                                     </div>
                                     <div class="depo-info">
                                         <h4>Patrícia Lima</h4>
-                                        <span>Cliente há 4 anos</span>
+                                        <span data-i18n="testimonials.client4">Cliente há 4 anos</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-btn depo-next" id="depoNext" aria-label="Próximo depoimento">
+                <button class="carousel-btn depo-next" id="depoNext" aria-label="Próximo depoimento" data-i18n-aria-label="testimonials.next">
                     <i class="fas fa-chevron-right"></i>
                 </button>
             </div>
@@ -399,10 +400,10 @@
     <section class="section contato" id="contato">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">♥ Entre em contato ♥</span>
-                <h2 class="section-title">Fale Conosco</h2>
+                <span class="section-tag" data-i18n="contact.tag">♥ Entre em contato ♥</span>
+                <h2 class="section-title" data-i18n="contact.title">Fale Conosco</h2>
                 <div class="title-divider"></div>
-                <p class="section-desc">Agende seu horário ou tire suas dúvidas pelo WhatsApp!</p>
+                <p class="section-desc" data-i18n="contact.description">Agende seu horário ou tire suas dúvidas pelo WhatsApp!</p>
             </div>
             <div class="contato-content">
                 <div class="contato-info">
@@ -439,7 +440,7 @@
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div>
-                                <h4>Endereço</h4>
+                                <h4 data-i18n="contact.address">Endereço</h4>
                                 <p>Timóteo/MG</p>
                             </div>
                         </a>
@@ -448,43 +449,43 @@
                                 <i class="fas fa-clock"></i>
                             </div>
                             <div>
-                                <h4>Horário</h4>
-                                <p>Segunda a Sábado<br>08:00 - 18:00</p>
+                                <h4 data-i18n="contact.hours">Horário</h4>
+                                <p data-i18n-html="contact.hoursValue">Segunda a Sábado<br>08:00 - 18:00</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="contato-form-wrapper">
                     <form class="contato-form" id="contatoForm">
-                        <h3>Envie sua mensagem pelo WhatsApp</h3>
-                        <p class="form-subtitle">Preencha os campos abaixo e será redirecionada para nosso WhatsApp.</p>
+                        <h3 data-i18n="contact.formTitle">Envie sua mensagem pelo WhatsApp</h3>
+                        <p class="form-subtitle" data-i18n="contact.formSubtitle">Preencha os campos abaixo e será redirecionada para nosso WhatsApp.</p>
                         <div class="form-group">
-                            <label for="nome">Nome Completo *</label>
-                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                            <label for="nome" data-i18n="contact.name">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" data-i18n-placeholder="contact.namePlaceholder" required>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="telefone">Telefone</label>
-                                <input type="tel" id="telefone" name="telefone" placeholder="(31) 99999-9999">
+                                <label for="telefone" data-i18n="contact.phone">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(31) 99999-9999" data-i18n-placeholder="contact.phonePlaceholder">
                             </div>
                             <div class="form-group">
-                                <label for="servico">Serviço Desejado *</label>
+                                <label for="servico" data-i18n="contact.service">Serviço Desejado *</label>
                                 <select id="servico" name="servico" required>
-                                    <option value="">Selecione...</option>
-                                    <option value="Manicure e Pedicure">Manicure e Pedicure</option>
-                                    <option value="Cabeleireira">Cabeleireira</option>
-                                    <option value="Unhas de Gel">Unhas de Gel</option>
-                                    <option value="Sobrancelhas">Sobrancelhas</option>
-                                    <option value="Outro">Outro</option>
+                                    <option value="" data-i18n="contact.select">Selecione...</option>
+                                    <option value="Manicure e Pedicure" data-i18n="services.manicure">Manicure e Pedicure</option>
+                                    <option value="Cabeleireira" data-i18n="services.hair">Cabeleireira</option>
+                                    <option value="Unhas de Gel" data-i18n="services.gel">Unhas de Gel</option>
+                                    <option value="Sobrancelhas" data-i18n="services.brows">Sobrancelhas</option>
+                                    <option value="Outro" data-i18n="contact.other">Outro</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="mensagem">Mensagem *</label>
-                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem, preferência de horário, etc." required></textarea>
+                            <label for="mensagem" data-i18n="contact.message">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem, preferência de horário, etc." data-i18n-placeholder="contact.messagePlaceholder" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-full">
-                            <i class="fab fa-whatsapp"></i> Enviar pelo WhatsApp
+                            <i class="fab fa-whatsapp"></i> <span data-i18n="contact.send">Enviar pelo WhatsApp</span>
                         </button>
                     </form>
                 </div>
@@ -497,31 +498,31 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="assets/img/logo-rodape.png" alt="Rayone Alves - Instrutora e Nail Designer" class="footer-logo">
-                    <p>Mais de 20 anos cuidando da beleza e autoestima de mulheres em Timóteo/MG.</p>
+                    <img src="assets/img/logo-rodape.png" alt="Rayone Alves - Instrutora e Nail Designer" class="footer-logo" data-i18n-alt="brand.logoAlt">
+                    <p data-i18n="footer.description">Mais de 20 anos cuidando da beleza e autoestima de mulheres em Timóteo/MG.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Links Rápidos</h4>
+                    <h4 data-i18n="footer.quickLinks">Links Rápidos</h4>
                     <ul>
                         <li><a href="#home">Início</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#galeria">Galeria</a></li>
-                        <li><a href="#depoimentos">Depoimentos</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+                        <li><a href="#servicos" data-i18n="nav.services">Serviços</a></li>
+                        <li><a href="#galeria" data-i18n="nav.gallery">Galeria</a></li>
+                        <li><a href="#depoimentos" data-i18n="nav.testimonials">Depoimentos</a></li>
+                        <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
                     </ul>
                 </div>
                 <div class="footer-services">
-                    <h4>Serviços</h4>
+                    <h4 data-i18n="nav.services">Serviços</h4>
                     <ul>
-                        <li><a href="#servicos">Manicure e Pedicure</a></li>
-                        <li><a href="#servicos">Cabeleireira</a></li>
-                        <li><a href="#servicos">Unhas de Gel</a></li>
-                        <li><a href="#servicos">Sobrancelhas</a></li>
+                        <li><a href="#servicos" data-i18n="services.manicure">Manicure e Pedicure</a></li>
+                        <li><a href="#servicos" data-i18n="services.hair">Cabeleireira</a></li>
+                        <li><a href="#servicos" data-i18n="services.gel">Unhas de Gel</a></li>
+                        <li><a href="#servicos" data-i18n="services.brows">Sobrancelhas</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
-                    <h4>Redes Sociais</h4>
+                    <h4 data-i18n="footer.social">Redes Sociais</h4>
                     <div class="social-links">
                         <a href="https://wa.me/5531971643629" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-whatsapp">
                             <i class="fab fa-whatsapp"></i>
@@ -536,23 +537,24 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Rayone Alves - Instrutora e Nail Designer. Todos os direitos reservados.</p>
+                <p data-i18n="footer.copyright">&copy; 2026 Rayone Alves - Instrutora e Nail Designer. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
     <!-- ===================== WHATSAPP FLOATING BUTTON ===================== -->
-    <a href="https://wa.me/5531971643629?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." 
+    <a href="https://wa.me/5531971643629?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio."
        class="whatsapp-float" 
+       data-wa-message="hero.booking"
        target="_blank" 
        rel="noopener"
-       aria-label="Contato pelo WhatsApp">
+       aria-label="Contato pelo WhatsApp" data-i18n-aria-label="contact.whatsappLabel">
         <i class="fab fa-whatsapp"></i>
-        <span class="whatsapp-tooltip">Fale conosco!</span>
+        <span class="whatsapp-tooltip" data-i18n="contact.whatsappTooltip">Fale conosco!</span>
     </a>
 
     <!-- ===================== BACK TO TOP ===================== -->
-    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo" data-i18n-aria-label="nav.backToTop">
         <i class="fas fa-chevron-up"></i>
     </button>
 
