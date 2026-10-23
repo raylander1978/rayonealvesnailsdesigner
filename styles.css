@@ -520,6 +520,11 @@ img {
     transition: var(--transition);
 }
 
+.servico-icon svg {
+    width: 1em;
+    height: 1em;
+}
+
 .servico-card:hover .servico-icon {
     background: linear-gradient(135deg, var(--rose-accent), var(--pink-dark));
     color: var(--white);
