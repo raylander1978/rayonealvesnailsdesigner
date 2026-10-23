@@ -107,7 +107,7 @@ function initGalleryCarousel() {
     }
 
     function startAutoplay() {
-        autoplayInterval = setInterval(nextSlide, 4000);
+        autoplayInterval = setInterval(nextSlide, 10000);
     }
 
     function stopAutoplay() {
